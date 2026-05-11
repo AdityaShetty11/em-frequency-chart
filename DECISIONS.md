@@ -32,3 +32,6 @@ The X-axis was starting exactly at 43.9 Hz, which is also where the Mode 1 refer
 
 **Modular frontend structure**
 The initial `App.jsx` had everything in one file — the API call, state management, and chart rendering. This was refactored into three focused pieces: a custom hook (`useEffectiveMass.js`) that handles fetching and state, a chart component (`EffectiveMassChart.jsx`) that handles rendering, and `App.jsx` that simply composes them. Each file now has one clear responsibility.
+
+**README**
+Added a README with clear instructions to run both the backend and frontend locally, so anyone cloning the repo can get it running without guessing.
