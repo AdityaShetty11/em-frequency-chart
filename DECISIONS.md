@@ -35,3 +35,6 @@ The initial `App.jsx` had everything in one file — the API call, state managem
 
 **README**
 Added a README with clear instructions to run both the backend and frontend locally, so anyone cloning the repo can get it running without guessing.
+
+**Modular backend structure**
+The initial `main.py` had everything in one file — app setup, data loading, and route handlers. This was refactored into three focused pieces: `services/data_service.py` that handles CSV reading and parsing, `routers/effective_mass.py` that defines the route handlers, and `main.py` that simply creates the app, wires the middleware, and registers the router.
